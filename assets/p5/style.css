@@ -1,0 +1,11 @@
+/* Hier werden Elemente auf dem Canvas gestylt */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    display: block;
+}
