@@ -1,7 +1,11 @@
-{
-  "include": [
-    "*.js",
-    "libraries/*.js",
-    "/Users/celine/.vscode/extensions/samplavigne.p5-vscode-1.2.8/p5types/global.d.ts"
-, "assets/p5/sketch.js"  ]
-}
+// {
+//   "include": [
+//     "*.js",
+//     "libraries/*.js",
+//    // "../test.json",
+//    // "test.json",
+
+//     //die Ziele da unne verwiest ja no uf mich, das chönnt au s problem sie
+//     "/Users/celine/.vscode/extensions/samplavigne.p5-vscode-1.2.8/p5types/global.d.ts"
+//   ]
+// }
