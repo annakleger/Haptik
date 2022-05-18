@@ -3,16 +3,18 @@
         "time": "17.05.2022, 15:58",
         "activity": "Zuhause, SG, Laptop",
         "reason": "j",
-        "face": "5/11",
-        "hand": "R4"
+        "facex": 5,
+        "facey": 11,
+        "hand": 4
     },
     {
         "name": "larissa",
         "time": "17.05.2022, 15:58",
         "activity": "Zuhause, SG, Laptop",
         "reason": "j",
-        "face": "11/8",
-        "hand": "R5"
+        "facex": 11,
+        "facey": 8,
+        "hand": 5
     },
     {
         "name": "larissa",
@@ -28,7 +30,7 @@
         "activity": "Zuhause, SG, Laptop",
         "reason": "j",
         "face": "6/7, 6/8",
-        "hand": "R3"
+        "hand": 3
     },
     {
         "name": "larissa",
@@ -36,7 +38,7 @@
         "activity": "Zuhause, SG, Laptop",
         "reason": "j",
         "face": "2/8",
-        "hand": "L2"
+        "hand": 12
     },
     {
         "name": "larissa",
@@ -60,7 +62,7 @@
         "activity": "Zuhause, SG, Laptop",
         "reason": "a",
         "face": "10/9, 11/8",
-        "hand": "R18"
+        "hand": 18
     },
     {
         "name": "larissa",
@@ -68,7 +70,7 @@
         "activity": "Zuhause, SG, Laptop",
         "reason": "b",
         "face": "11/9",
-        "hand": "L13"
+        "hand": 23
     },
     {
         "name": "larissa",
@@ -76,7 +78,7 @@
         "activity": "Zuhause, SG, Laptop",
         "reason": "j",
         "face": "8/9",
-        "hand": "L5"
+        "hand": 15
     },
     {
         "name": "larissa",
@@ -84,7 +86,7 @@
         "activity": "Zuhause, SG, Laptop",
         "reason": "a",
         "face": "10/9, 11/8",
-        "hand": "R18"
+        "hand": 18
     },
     {
         "name": "larissa",
@@ -92,7 +94,7 @@
         "activity": "Zuhause, SG, Laptop",
         "reason": "j",
         "face": "8/9",
-        "hand": "L5"
+        "hand": 15
     },
     {
         "name": "larissa",
@@ -100,7 +102,7 @@
         "activity": "Zuhause, SG, Laptop",
         "reason": "a",
         "face": "10/9",
-        "hand": "R17"
+        "hand": 17
     },
     {
         "name": "larissa",
@@ -116,7 +118,7 @@
         "activity": "Zuhause, SG, Laptop",
         "reason": "g",
         "face": "5/6, 4/6",
-        "hand": "R3"
+        "hand": 3
     },
     {
         "name": "larissa",
