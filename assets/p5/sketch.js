@@ -1,14 +1,8 @@
-let loadedJSON = null;
-let test;
-let gesichtskoordinatex;
-let gesichtskoordinatey;
+let test_data;
+let count = 0;
+
 var grid_unit = 50;
 
-
-function preload() {
-
-
-}
 
 function setup() {
 
@@ -17,20 +11,18 @@ function setup() {
     coordinate_canvas.position(windowWidth / 2 - 350, windowHeight / 2 - 350);
 
     textSize(36);
-    loadBtn = createButton("Load JSON from file");
-    loadBtn.position(30, 1000);
-    loadBtn.mousePressed(loadJSONFile);
-}
 
-function loadJSONFile() {
-    // Load the JSON from file
-    loadedJSON = loadJSON('test.json', onFileload);
-}
-
-function onFileload() {
-    console.log("success");
+    //json file muess usserhalb vom p5 ordner sie, dass es chan glade werde
+    let url = "../../test.json";
+    loadJSON(url, loaded);
 
 }
+
+function loaded(data) {
+    test_data = data;
+}
+
+
 
 function draw() {
     colorMode(HSB); //Vorteil: drei Parameter oder vier mit Transparenz; hue (0-360), saruration (0-100), brightness (0-100), alpha (0-1)
@@ -51,8 +43,11 @@ function draw() {
     fill(10, 80, 80, 0.5);
     circle(425, 425, 50);
 
+    let xkoordinate = (test_data.gesichtskoordinatex - 1) * 50 + 25;
+    let ykoordinate = (test_data.gesichtskoordinatey - 1) * 50 + 25;
+
     fill(60, 100, 100, 0.5);
-    circle(test.gesichtskoordinatex, test.gesichtskoordinatey, 50);
+    circle(xkoordinate, ykoordinate, 50);
 
 
 }
