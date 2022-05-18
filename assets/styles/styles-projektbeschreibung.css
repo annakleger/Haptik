@@ -1,0 +1,85 @@
+@import url("https://use.typekit.net/dnl0aot.css");
+body {
+    margin: none;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: century-gothic, sans-serif;
+    font-weight: 400;
+    font-weight: 400px;
+    font-style: normal;
+    background-color: white;
+    color: #434343;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400px;
+    font-style: normal;
+    font-weight: 400;
+    color: #4e2f50
+}
+
+.container {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    width: 32%;
+    position: relative;
+}
+
+.container2 {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item2 {
+    width: 32%;
+    position: relative;
+    flex: 2;
+    padding-right: 50px;
+}
+
+.title {
+    color: #a29084;
+}
+
+a {
+    color: #4e2f50;
+    transition: all linear 1s;
+}
+
+a:active {
+    color: #4e2f50;
+}
+
+li {
+    line-height: 25px;
+}
+
+p {
+    /* text-align: justify; */
+    hyphens: auto;
+}
+
+.quote {
+    font-style: italic;
+    text-align: center;
+}
+
+.abstand {
+    padding-top: 60px;
+}
+
+.img {
+    padding-top: 20px;
+}
