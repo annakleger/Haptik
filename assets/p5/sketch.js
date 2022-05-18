@@ -1,7 +1,8 @@
-let loadedJSON = null;
-let test;
-let gesichtskoordinatex;
-let gesichtskoordinatey;
+// let loadedJSON = null;
+// let test;
+// let gesichtskoordinatex;
+// let gesichtskoordinatey;
+let test_data;
 var grid_unit = 50;
 
 
