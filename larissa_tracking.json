@@ -3,24 +3,6 @@
         "time": "17.05.2022, 15:58",
         "activity": "Zuhause, SG, Laptop",
         "reason": "j",
-        "facex": 5,
-        "facey": 11,
-        "hand": 4
-    },
-    {
-        "name": "larissa",
-        "time": "17.05.2022, 15:58",
-        "activity": "Zuhause, SG, Laptop",
-        "reason": "j",
-        "facex": 11,
-        "facey": 8,
-        "hand": 5
-    },
-    {
-        "name": "larissa",
-        "time": "17.05.2022, 15:58",
-        "activity": "Zuhause, SG, Laptop",
-        "reason": "j",
         "face": "7/12",
         "hand": [5, 12]
     },

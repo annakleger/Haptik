@@ -5,10 +5,27 @@ h1 {
     text-decoration: wavy;
 }
 
-.random {
+
+/* .random {
     width: 50px;
     height: 50px;
-    background-color: rgb(184, 208, 0);
+    border-radius: 50%;
+    background-color: rgba(0, 0, 255, 0.64);
+    box-shadow: 0px 0px 15px blue;
+    /* left: 900px;
+    top: 300px; */
+
+
+/* position: absolute;} */
+
+.random {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: radial-gradient(at bottom right, #474bff 0, #474bff 4px, rgba(71, 75, 255, 0.2) 4px, rgba(71, 75, 255, 0.2) 8px, rgba(71, 75, 255, 0.75) 8px, rgba(71, 75, 255, 0.75) 12px, rgba(71, 75, 255, 0.25) 12px, rgba(71, 75, 255, 0.25) 16px, rgba(71, 75, 255, 0.3) 16px, rgba(71, 75, 255, 0.3) 20px, rgba(71, 75, 255, 0.75) 20px, rgba(71, 75, 255, 0.75) 24px, rgba(71, 75, 255, 0.2) 24px, rgba(71, 75, 255, 0.2) 28px, transparent 28px, transparent 32px), radial-gradient(at top left, transparent 0, transparent 4px, rgba(71, 75, 255, 0.2) 4px, rgba(71, 75, 255, 0.2) 8px, rgba(71, 75, 255, 0.75) 8px, rgba(71, 75, 255, 0.75) 12px, rgba(71, 75, 255, 0.3) 12px, rgba(71, 75, 255, 0.3) 16px, rgba(71, 75, 255, 0.25) 16px, rgba(71, 75, 255, 0.25) 20px, rgba(71, 75, 255, 0.75) 20px, rgba(71, 75, 255, 0.75) 24px, rgba(71, 75, 255, 0.2) 24px, rgba(71, 75, 255, 0.2) 28px, #474bff 28px, #474bff 32px, transparent 32px, transparent 80px);
+    background-blend-mode: multiply;
+    background-size: 32px 32px, 32px 32px;
+    background-color: #ffffff;
     /* left: 900px;
     top: 300px; */
     position: absolute;

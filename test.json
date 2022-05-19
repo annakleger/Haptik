@@ -1,9 +1,28 @@
-{
-    "name": "larissa",
-    "time": "17.05.2022, 15:58",
-    "activity": "Zuhause, Laptop",
-    "reason": "j, a, d, bd, g, b ",
-    "facex": [5, 10, 14, 1, 3, 7],
-    "facey": [7, 2, 3, 6, 3, 13],
-    "hand": [2, 19, 7, 3, 9, 38]
-}
+[{
+        "name": "larissa",
+        "time": "17.05.2022, 15:58",
+        "activity": "Zuhause, Laptop",
+        "reason": "j, a, d, bd, g, b ",
+        "facex": [5, 10, 14, 1, 3, 7],
+        "facey": [7, 2, 3, 6, 3, 13],
+        "hand": [2, 19, 7, 3, 9, 38]
+    },
+
+    {
+        "name": "larissa",
+        "time": "17.05.2022, 15:58",
+        "activity": "Zuhause, Laptop",
+        "reason": {
+            "j": [{
+                "facex": [5, 10, 14, 1, 3, 7],
+                "facey": [7, 2, 3, 6, 3, 13],
+                "hand": [2, 19, 7, 3, 9, 38]
+            }]
+        }
+
+        "j, a, d, bd, g, b ",
+        "facex": [5, 10, 14, 1, 3, 7],
+        "facey": [7, 2, 3, 6, 3, 13],
+        "hand": [2, 19, 7, 3, 9, 38]
+    }
+]
