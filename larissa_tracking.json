@@ -22,7 +22,7 @@
         "activity": "Zuhause, SG, Laptop",
         "reason": "j",
         "face": "7/12",
-        "hand": "R5, R12"
+        "hand": [5, 12]
     },
     {
         "name": "larissa",

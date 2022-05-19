@@ -13,10 +13,10 @@ function setup() {
     textSize(36);
 
     //json file muess usserhalb vom p5 ordner sie, dass es chan glade werde
-    // let url_test = "../../test.json";
-    // loadJSON(url_test, loaded);
-    let url = "../../larissa_tracking.json";
-    loadJSON(url, loaded);
+    let url_test = "../../test.json";
+    loadJSON(url_test, loaded);
+    ////let url = "../../larissa_tracking.json";
+    //// loadJSON(url, loaded);
 
     let save_button = createButton("Speichern");
     save_button.position(40, 990);
@@ -25,8 +25,8 @@ function setup() {
 }
 
 function loaded(data) {
-    // test_data = data;
-    larissa_data = data;
+    test_data = data;
+    ////larissa_data = data;
 }
 
 
@@ -52,29 +52,51 @@ function draw() {
 
 
     //test mit daten aus dem test.json file
-    // let xkoordinate = (test_data.gesichtskoordinatex - 1) * 50 + 25;
-    // let ykoordinate = (test_data.gesichtskoordinatey - 1) * 50 + 25;
+    // let xkoordinate = [];
+    // let ykoordinate = [];
+    // let facex;
+    // let facey;
+
+    // for (let i = 0; i < facex.length; i++) {
+    //     xkoordinate = (test_data.facex[i] - 1) * 50 + 25;
+    //     ykoordinate = (test_data.facey[i] - 1) * 50 + 25;
+    // }
+
+    let xkoordinate = (test_data.facex[0] - 1) * 50 + 25;
+    let ykoordinate = (test_data.facey[0] - 1) * 50 + 25;
+
+    // let hand;
+    // let hue = map(test_data.hand[5], 1, 38, 0, 360);
+    // fill(hue, 100, 100, 0.8);
+
+    hue = color('hsb(' + round(map(test_data.hand[5], 1, 38, 0, 360)) + ', 75%, 75%)');
+    fill(hue);
+
+
+
 
     // fill(60, 100, 100, 0.5);
-    // circle(xkoordinate, ykoordinate, 50);
-
-    //daten aus dem file larissa_tracking.json
-
-
-    let hand;
-
-    //ich han im Json dwert vo de rechte hand glah und bi de linke immer +10 aber ohni L
-
-    //positionierung des Mittelpunktes nach Gesichtskarte
-    let xkoordinate = (larissa_data.facex - 1) * 50 + 25;
-    let ykoordinate = (larissa_data.facey - 1) * 50 + 25;
-
-    //Kreis zeichnen
     circle(xkoordinate, ykoordinate, 50);
 
-    //Farbe nach Handkarte
-    let hue = map(hand, 1, 0, 38, 360);
-    fill(hue, 100, 100, 0.8);
+
+
+
+
+    ////Arbeit mit Larissas Daten aus dem JSON file
+    // let hand;
+
+    // //ich han im Json dwert vo de rechte hand glah und bi de linke immer +10 aber ohni L
+
+    // //positionierung des Mittelpunktes nach Gesichtskarte
+    // let xkoordinate = (larissa_data.facex - 1) * 50 + 25;
+    // let ykoordinate = (larissa_data.facey - 1) * 50 + 25;
+
+    // //Kreis zeichnen
+    // circle(xkoordinate, ykoordinate, 50);
+
+    // //Farbe nach Handkarte
+    // let hue = map(hand, 1, 0, 38, 360);
+    // fill(hue, 100, 100, 0.8);
 
 
 }
