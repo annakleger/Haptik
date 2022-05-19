@@ -3,8 +3,24 @@
         "time": "17.05.2022, 15:58",
         "activity": "Zuhause, SG, Laptop",
         "reason": "j",
+        "face": "5/11",
+        "hand": "R4"
+    },
+    {
+        "name": "larissa",
+        "time": "17.05.2022, 15:58",
+        "activity": "Zuhause, SG, Laptop",
+        "reason": "j",
+        "face": "11/8",
+        "hand": "R5"
+    },
+    {
+        "name": "larissa",
+        "time": "17.05.2022, 15:58",
+        "activity": "Zuhause, SG, Laptop",
+        "reason": "j",
         "face": "7/12",
-        "hand": [5, 12]
+        "hand": "R5, R12"
     },
     {
         "name": "larissa",
@@ -12,7 +28,7 @@
         "activity": "Zuhause, SG, Laptop",
         "reason": "j",
         "face": "6/7, 6/8",
-        "hand": 3
+        "hand": "R3"
     },
     {
         "name": "larissa",
@@ -20,7 +36,7 @@
         "activity": "Zuhause, SG, Laptop",
         "reason": "j",
         "face": "2/8",
-        "hand": 12
+        "hand": "L2"
     },
     {
         "name": "larissa",
@@ -44,7 +60,7 @@
         "activity": "Zuhause, SG, Laptop",
         "reason": "a",
         "face": "10/9, 11/8",
-        "hand": 18
+        "hand": "R18"
     },
     {
         "name": "larissa",
@@ -52,7 +68,7 @@
         "activity": "Zuhause, SG, Laptop",
         "reason": "b",
         "face": "11/9",
-        "hand": 23
+        "hand": "L13"
     },
     {
         "name": "larissa",
@@ -60,7 +76,7 @@
         "activity": "Zuhause, SG, Laptop",
         "reason": "j",
         "face": "8/9",
-        "hand": 15
+        "hand": "L5"
     },
     {
         "name": "larissa",
@@ -68,7 +84,7 @@
         "activity": "Zuhause, SG, Laptop",
         "reason": "a",
         "face": "10/9, 11/8",
-        "hand": 18
+        "hand": "R18"
     },
     {
         "name": "larissa",
@@ -76,7 +92,7 @@
         "activity": "Zuhause, SG, Laptop",
         "reason": "j",
         "face": "8/9",
-        "hand": 15
+        "hand": "L5"
     },
     {
         "name": "larissa",
@@ -84,7 +100,7 @@
         "activity": "Zuhause, SG, Laptop",
         "reason": "a",
         "face": "10/9",
-        "hand": 17
+        "hand": "R17"
     },
     {
         "name": "larissa",
@@ -100,7 +116,7 @@
         "activity": "Zuhause, SG, Laptop",
         "reason": "g",
         "face": "5/6, 4/6",
-        "hand": 3
+        "hand": "R3"
     },
     {
         "name": "larissa",
@@ -109,14 +125,6 @@
         "reason": "g",
         "face": "3/10",
         "hand": "R2, R3"
-    },
-    {
-        "name": "",
-        "time": "",
-        "activity": "",
-        "reason": "",
-        "face": "",
-        "hand": ""
     },
     {
         "name": "larissa",
@@ -191,14 +199,6 @@
         "hand": "R18"
     },
     {
-        "name": "",
-        "time": "",
-        "activity": "",
-        "reason": "",
-        "face": "",
-        "hand": ""
-    },
-    {
         "name": "larissa",
         "time": "17.05.2022, 16:24",
         "activity": "Zuhause, SG, Laptop",
@@ -237,14 +237,6 @@
         "reason": "a",
         "face": "7/14",
         "hand": "R4, R5"
-    },
-    {
-        "name": "",
-        "time": "",
-        "activity": "",
-        "reason": "",
-        "face": "",
-        "hand": ""
     },
     {
         "name": "larissa",
@@ -309,14 +301,6 @@
         "reason": "b",
         "face": "7/10",
         "hand": "R4, R5"
-    },
-    {
-        "name": "",
-        "time": "",
-        "activity": "",
-        "reason": "",
-        "face": "",
-        "hand": ""
     },
     {
         "name": "larissa",
@@ -405,14 +389,6 @@
         "reason": "d",
         "face": "5/9, 9/9",
         "hand": "R5, R10, R18"
-    },
-    {
-        "name": "",
-        "time": "",
-        "activity": "",
-        "reason": "",
-        "face": "",
-        "hand": ""
     },
     {
         "name": "larissa",
