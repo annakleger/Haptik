@@ -62,8 +62,8 @@ function draw() {
     //     ykoordinate = (test_data.facey[i] - 1) * 50 + 25;
     // }
 
-    let xkoordinate = (test_data.facex[0] - 1) * 50 + 25;
-    let ykoordinate = (test_data.facey[0] - 1) * 50 + 25;
+    let xkoordinate = (test_data.facex[5] - 1) * 50 + 25;
+    let ykoordinate = (test_data.facey[5] - 1) * 50 + 25;
 
     // let hand;
     // let hue = map(test_data.hand[5], 1, 38, 0, 360);

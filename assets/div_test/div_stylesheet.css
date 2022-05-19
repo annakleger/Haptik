@@ -1,0 +1,15 @@
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    font-weight: bolder;
+    text-decoration: wavy;
+}
+
+.random {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(184, 208, 0);
+    /* left: 900px;
+    top: 300px; */
+    position: absolute;
+}
