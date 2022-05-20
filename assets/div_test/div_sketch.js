@@ -15,7 +15,7 @@ function preload() {
 function setup() {
     //Canvas erstellen und einmitten abhängig von der window-Grösse; müsste noch automatischen Refresh bei canvasResized programmieren
     var coordinate_canvas = createCanvas(700, 700);
-    coordinate_canvas.position(windowWidth / 2 - 350, windowHeight / 2 - 350);
+    coordinate_canvas.position(windowWidth / 2 - 350, windowHeight / 1.7 - 350);
 
     cell_size = width / col
 

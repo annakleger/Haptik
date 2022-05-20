@@ -30,3 +30,7 @@ h1 {
     top: 300px; */
     position: absolute;
 }
+
+canvas {
+    display: block;
+}
