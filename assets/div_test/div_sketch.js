@@ -1,12 +1,10 @@
 let test_data;
+
 var grid_unit = 50;
 
 let col = 14
 let row = 14
 let cell_size = 0
-
-let png1;
-
 
 // This function loads resources that will be used later.
 function preload() {
@@ -16,9 +14,26 @@ function preload() {
     png1 = loadImage('../img/4Zeichenfläche 1.png');
 
 
-    //import { SVG } from '@assets/svg/Beispiel_Kachel-06.svg'
-
-
+    pattern_1 = loadImage('../img/patterns_01.png');
+    pattern_2 = loadImage('../img/patterns-02.png');
+    pattern_3 = loadImage('../img/patterns-03.png');
+    pattern_4 = loadImage('../img/patterns-04.png');
+    pattern_5 = loadImage('../img/patterns-05.png');
+    pattern_6 = loadImage('../img/patterns-06.png');
+    pattern_7 = loadImage('../img/patterns-07.png');
+    pattern_8 = loadImage('../img/patterns-08.png');
+    pattern_9 = loadImage('../img/patterns-09.png');
+    pattern_10 = loadImage('../img/patterns-10.png');
+    pattern_11 = loadImage('../img/patterns-11.png');
+    pattern_12 = loadImage('../img/patterns-12.png');
+    pattern_13 = loadImage('../img/patterns-13.png');
+    pattern_14 = loadImage('../img/patterns-14.png');
+    pattern_15 = loadImage('../img/patterns-15.png');
+    pattern_16 = loadImage('../img/patterns-16.png');
+    pattern_17 = loadImage('../img/patterns-17.png');
+    pattern_18 = loadImage('../img/patterns-18.png');
+    pattern_19 = loadImage('../img/patterns-19.png');
+    pattern_20 = loadImage('../img/patterns-20.png');
 }
 
 //Alles was nur einmal, beim ersten Laden der Seite ausgeführt werden soll
@@ -84,7 +99,14 @@ function draw() {
 
     stroke(255, 0, 0);
 
-    image(png1, 450, 100);
+    image(png1, 9 * grid_unit, 2 * grid_unit);
+    image(png1, 9 * grid_unit, 3 * grid_unit);
+    image(pattern_13, 9 * grid_unit, 3 * grid_unit, grid_unit, grid_unit);
+    tint(255, 200); //zweite Zahl bestimmt Deckkraft; 0-255
+
+
+    rotate(PI / 4);
+    image(png1, 250, 100);
 
 }
 
@@ -92,7 +114,9 @@ function draw() {
 //Koordinatensystem-Grid zur ersten Orientierung
 function grid(value) {
     // background(50, 50, 50);
-    stroke(0, 0, 255);
+
+    //stroke(0, 0, 255);   
+    noStroke();
     // console.log(face_positions)
     for (let x = 0; x <= col; x += 1) {
         for (let y = 0; y <= row; y += 1) {
@@ -155,8 +179,10 @@ function show_gesture(value) {
 //                     const element = hand[i];
 
 
-//                     if (get_hand == L2) { fill(255, 100, 100, 70); } else if (get_hand == R18) { fill(100, 255, 100, 100); } else { fill(100, 100, 255, 70); }
-//                     square(x * cell_size, y * cell_size, cell_size)
+//                     if (get_hand == L2) {
+//                         img(patter_2);
+//                     } else if (get_hand == R18) { img(pattern_14); } else { pattern_19; }
+
 //                 }
 //             }
 //         }
@@ -165,11 +191,6 @@ function show_gesture(value) {
 
 //     }
 // }
-
-// function hatching(x, y, length, number) {
-//     var endX = x + length; //endpunkt x-koordinate
-//     var endY = y - length; //endpunkt y-koordinate
-
 
 
 //     for (var i = 0; i < number; i++) {
