@@ -1,5 +1,6 @@
 body {
     background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 section {
@@ -26,7 +27,7 @@ section .text span {
     display: inline-block;
     cursor: pointer;
     background: white;
-    padding: 2px;
+    line-height: 20px;
 }
 
 section .text span.active {
