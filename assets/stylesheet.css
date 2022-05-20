@@ -39,3 +39,15 @@ a:visited {
 #zurueck {
     margin-top: 30px;
 }
+
+.bildgruppe {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.entwurf {
+    width: 400px;
+    height: auto;
+    padding: 20px;
+}
