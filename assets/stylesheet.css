@@ -51,3 +51,17 @@ a:visited {
     height: auto;
     padding: 20px;
 }
+
+.video_larissa {
+    margin-left: 40px;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    opacity: 40%;
+    cursor: pointer;
+}
+
+.video_larissa:hover {
+    opacity: 100%;
+}
