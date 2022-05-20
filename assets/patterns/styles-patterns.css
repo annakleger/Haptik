@@ -1,4 +1,59 @@
-.element {
+body {
+    background-color: blue;
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: rgba(0, 0, 0, 0); */
+    overflow: hidden;
+}
+
+section .text {
+    position: relative;
+    text-align: justify;
+    box-decoration-break: clone;
+    margin: 40px;
+    max-width: 800px;
+    user-select: none;
+}
+
+section .text span {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background: white;
+    padding: 2px;
+}
+
+section .text span.active {
+    animation: smoke 2s linear forwards;
+    /*backward füllt text wieder auf*/
+    transform-origin: bottom;
+}
+
+@keyframes smoke {
+    0% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+    }
+    50% {
+        opacity: 1;
+        pointer-events: none;
+    }
+    100% {
+        opacity: 0;
+        filter: blur(20px);
+        transform: translateX(10px) translateY(-10px) rotate(100deg) scale(5);
+    }
+}
+
+
+/* .element {
     height: 50px;
     width: 50px;
     mix-blend-mode: multiply;
@@ -67,4 +122,4 @@
     opacity: 0.7;
     background-image: linear-gradient(to right, #444cf7, #444cf7 8px, #e5e5f7 8px, #e5e5f7);
     background-size: 16px 100%;
-}
+} */

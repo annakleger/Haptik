@@ -11,6 +11,28 @@
 
 <body>
 
+
+
+
+    <section>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde ratione dolore, quo minima provident ad tenetur aspernatur! Esse omnis quos rem minus deserunt id quod, quis laboriosam fugiat reprehenderit.</p>
+    </section>
+
+    <script>
+        const text = document.querySelector('.text');
+        text.innerHTML = text.textContent.replace(/\S/g,
+            "<span>$&</span>");
+
+        const letters = document.querySelectorAll('span');
+        for (let i = 0; i < letters.length; i++) {
+            letters[i].addEventListener("mouseover", function() {
+                letters[i].classList.add('active')
+            })
+        }
+    </script>
+
+
+    <!-- 
     <div class="container">
         <div class="element jucken"></div>
         <div class="element aufstuetzen"></div>
@@ -204,7 +226,7 @@
         <div class="element bewusst"></div>
         <div class="element unbewusst"></div>
         <div class="element komfort"></div>
-
+ -->
 
 
     </div>
