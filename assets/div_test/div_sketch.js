@@ -36,6 +36,30 @@ function preload() {
     patterns[17] = loadImage('../img/patterns-18.png');
     patterns[18] = loadImage('../img/patterns-19.png');
     patterns[19] = loadImage('../img/patterns-20.png');
+    patterns[20] = loadImage('../img/patterns-21.png');
+    patterns[21] = loadImage('../img/patterns-22.png');
+    patterns[22] = loadImage('../img/patterns-23.png');
+    patterns[23] = loadImage('../img/patterns-24.png');
+    patterns[24] = loadImage('../img/patterns-25.png');
+    patterns[25] = loadImage('../img/patterns-26.png');
+    patterns[26] = loadImage('../img/patterns-27.png');
+    patterns[27] = loadImage('../img/patterns-28.png');
+    patterns[28] = loadImage('../img/patterns-29.png');
+    patterns[29] = loadImage('../img/patterns-30.png');
+    patterns[30] = loadImage('../img/patterns-31.png');
+    patterns[31] = loadImage('../img/patterns-32.png');
+    patterns[32] = loadImage('../img/patterns-33.png');
+    patterns[33] = loadImage('../img/patterns-34.png');
+    patterns[34] = loadImage('../img/patterns-35.png');
+    patterns[35] = loadImage('../img/patterns-36.png');
+    patterns[36] = loadImage('../img/patterns-37.png');
+    patterns[37] = loadImage('../img/patterns-38.png');
+    patterns[38] = loadImage('../img/patterns-39.png');
+    patterns[39] = loadImage('../img/patterns-40.png');
+    patterns[40] = loadImage('../img/patterns-41.png');
+    patterns[41] = loadImage('../img/patterns-42.png');
+    patterns[42] = loadImage('../img/patterns-43.png');
+    patterns[43] = loadImage('../img/patterns-44.png');
 }
 
 //Alles was nur einmal, beim ersten Laden der Seite ausgeführt werden soll
@@ -52,12 +76,9 @@ function setup() {
     save_button.mousePressed(saveSketch);
 
     angleMode(DEGREES);
-    // //hatching
-    // var hatchingNumber = 2; //wie viele hatchings
 
-    // for (var a = 1; a < hatchingNumber; a++) {
 
-    //     hatching(100, 100, 50, 15); //1. positionierung x, 2. positionierung y, 3. laenge der linie/steigung, 4. anzahl der linien
+
 }
 
 function loaded(data) {
@@ -94,22 +115,13 @@ function get_hand(hand_data) {
 
 //Wird kontinuierlich ausgeführt
 function draw() {
+
     grid()
     for (let i = 0; i < test_data.length; i++) {
         show_gesture(i)
     }
 
     stroke(255, 0, 0);
-
-    image(png1, 9 * grid_unit, 2 * grid_unit);
-    image(png1, 9 * grid_unit, 3 * grid_unit);
-    image(pattern_13, 9 * grid_unit, 3 * grid_unit, grid_unit, grid_unit);
-    tint(255, 200); //zweite Zahl bestimmt Deckkraft; 0-255
-
-
-    rotate(PI / 4);
-    image(png1, 250, 100);
-
 }
 
 
@@ -119,10 +131,11 @@ function grid(value) {
 
     //stroke(0, 0, 255);   
     noStroke();
+
     // console.log(face_positions)
     for (let x = 0; x <= col; x += 1) {
         for (let y = 0; y <= row; y += 1) {
-            fill(255)
+            fill('#060C3C');
 
             square(x * cell_size, y * cell_size, cell_size)
 
@@ -135,7 +148,7 @@ function grid(value) {
 function show_gesture(value) {
     let face_positions = get_positions_face(test_data[value])
     let hand = get_hand(test_data[value])
-        // console.log(hand);
+        //console.log(hand);
     for (let x = 0; x <= col; x += 1) {
         for (let y = 0; y <= row; y += 1) {
             // check the position of the face
@@ -156,11 +169,17 @@ function show_gesture(value) {
                         if (welcheHand == "R") {
                             push();
                             translate(x * cell_size + cell_size / 2, y * cell_size + cell_size / 2);
-                            rotate(90);
-                            image(bild, -cell_size / 2, -cell_size / 2, cell_size, cell_size);
+                            rotate(0);
+                            image(bild, -cell_size, -cell_size / 2, cell_size, cell_size);
                             pop();
+                            //blendMode(OVERLAY);
+                            tint(255, 150); //deckkraft
                         } else {
+                            push();
+                            translate(x * cell_size + cell_size / 2, y * cell_size + cell_size / 2);
+                            rotate(0);
                             image(bild, x * cell_size, y * cell_size, cell_size, cell_size);
+                            pop();
                         }
 
                         //console.log(bild);
@@ -178,51 +197,6 @@ function show_gesture(value) {
     }
 }
 
-
-
-// function show_gesture(value) {
-//     let face_positions = get_positions_face(test_data[value])
-//     let hand = get_hand(test_data[value])
-//         // console.log(face_positions)
-
-//     for (let x = 0; x <= col; x += 1) {
-//         for (let y = 0; y <= row; y += 1) {
-//             // check the position of the face
-//             // aginst the grid
-//             for (let i = 0; i < face_positions.length; i++) {
-//                 const element = face_positions[i];
-//                 let pos_x = element.x
-//                 let pos_y = element.y
-//                 if (x == pos_x && y == pos_y) {
-//                     fill(100, 100, 255, 70)
-//                     square(x * cell_size, y * cell_size, cell_size)
-//                 }
-
-
-//                 for (let i = 0; i < hand.length; i++) {
-//                     const element = hand[i];
-
-
-//                     if (get_hand == L2) {
-//                         img(patter_2);
-//                     } else if (get_hand == R18) { img(pattern_14); } else { pattern_19; }
-
-//                 }
-//             }
-//         }
-
-
-
-//     }
-// }
-
-
-//     for (var i = 0; i < number; i++) {
-//         stroke(220); //farbe
-//         translate(0, 4); //wie nahe die linien beieinander sind
-//         line(x, y, endX, endY); //1. punkt: start und ende, 2. punkt: start und ende
-//     }
-// }
 
 //Funktion für save-button erstellen
 function saveSketch() {

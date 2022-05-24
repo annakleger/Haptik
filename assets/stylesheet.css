@@ -1,21 +1,25 @@
 /* Hier wird alles auf der Website um den Canvas herum gestylt */
 
+body {
+    background-color: rgb(35, 35, 35);
+}
+
 h1 {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 2rem;
-    color: rgb(146, 146, 146);
+    font-size: 2.3rem;
+    color: white;
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
     padding: 20px;
     padding-bottom: 0px;
-    padding-top: 0px;
+    padding-top: 10px;
 }
 
 a {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.5rem;
-    color: rgb(146, 146, 146);
+    color: white;
     margin-top: 5px;
     margin-left: 20px;
     margin-bottom: 20px;
@@ -29,6 +33,12 @@ a {
 
 a:visited {
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: white;
 }
 
 .menu {
