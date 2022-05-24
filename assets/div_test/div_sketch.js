@@ -170,7 +170,7 @@ function show_gesture(value) {
                             push();
                             translate(x * cell_size + cell_size / 2, y * cell_size + cell_size / 2);
                             rotate(0);
-                            image(bild, -cell_size, -cell_size / 2, cell_size, cell_size);
+                            image(bild, -cell_size / 2, -cell_size / 2, cell_size, cell_size);
                             pop();
                             //blendMode(OVERLAY);
                             tint(255, 150); //deckkraft
@@ -178,7 +178,7 @@ function show_gesture(value) {
                             push();
                             translate(x * cell_size + cell_size / 2, y * cell_size + cell_size / 2);
                             rotate(0);
-                            image(bild, x * cell_size, y * cell_size, cell_size, cell_size);
+                            image(bild, -cell_size / 2, -cell_size / 2, cell_size, cell_size);
                             pop();
                         }
 
