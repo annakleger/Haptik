@@ -62,16 +62,36 @@ a:hover {
     padding: 20px;
 }
 
-.video_larissa {
+.videos {
     margin-left: 40px;
     padding: 0;
     display: flex;
     position: absolute;
-    flex-direction: row;
-    opacity: 40%;
+    flex-direction: column;
     cursor: pointer;
+    line-height: 0px;
 }
 
-.video_larissa:hover {
+.videosanna {
+    opacity: 40%;
+}
+
+.videosanna:hover {
+    opacity: 100%;
+}
+
+.videosceline {
+    opacity: 40%;
+}
+
+.videosceline:hover {
+    opacity: 100%;
+}
+
+.videoslarissa {
+    opacity: 40%;
+}
+
+.videoslarissa:hover {
     opacity: 100%;
 }
