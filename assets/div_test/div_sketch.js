@@ -164,28 +164,37 @@ function show_gesture(value) {
                     let bild;
                     let welcheHand;
                     for (let h = 0; h < hand.length; h++) {
-                        bildnummer = hand[h].substr(1, hand[h].length);
-                        welcheHand = hand[h].substr(0, 1);
-                        bild = patterns[bildnummer - 1];
+                        console.log(hand[h]);
+                        const hands = hand[h].split(",")
+                        for (const el of hands) {
+                            const parts = el.split("")
+                            welcheHand = parts[0]
+                            bildnummer = parts[1]
+                            console.log(bildnummer);
+                            if (bildnummer == undefined) {
+                                continue
+                            }
+                            bild = patterns[bildnummer - 1];
 
 
 
-                        if (welcheHand == "R") {
-                            push();
-                            translate(x * cell_size + cell_size / 2, y * cell_size + cell_size / 2);
-                            rotate(0);
-                            image(bild, -cell_size / 2, -cell_size / 2, cell_size, cell_size);
-                            pop();
+                            if (welcheHand == "R") {
+                                push();
+                                translate(x * cell_size + cell_size / 2, y * cell_size + cell_size / 2);
+                                rotate(0);
+                                image(bild, -cell_size / 2, -cell_size / 2, cell_size, cell_size);
+                                pop();
 
-                            //blendMode(OVERLAY);
-                            tint(255, 150); //deckkraft
+                                //blendMode(OVERLAY);
+                                tint(255, 150); //deckkraft
 
-                        } else {
-                            push();
-                            translate(x * cell_size + cell_size / 2, y * cell_size + cell_size / 2);
-                            rotate(0);
-                            image(bild, -cell_size / 2, -cell_size / 2, cell_size, cell_size);
-                            pop();
+                            } else {
+                                push();
+                                translate(x * cell_size + cell_size / 2, y * cell_size + cell_size / 2);
+                                rotate(90);
+                                image(bild, -cell_size / 2, -cell_size / 2, cell_size, cell_size);
+                                pop();
+                            }
                         }
 
                         //console.log(bild);
