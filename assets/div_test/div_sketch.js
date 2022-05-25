@@ -77,7 +77,7 @@ function setup() {
 
     angleMode(DEGREES);
 
-
+    noLoop();
 
 }
 
@@ -122,6 +122,8 @@ function draw() {
     }
 
     stroke(255, 0, 0);
+
+
 }
 
 
@@ -129,8 +131,8 @@ function draw() {
 function grid(value) {
     // background(50, 50, 50);
 
-    //stroke(0, 0, 255);   
-    noStroke();
+    stroke(0, 0, 255);
+    //noStroke();
 
     // console.log(face_positions)
     for (let x = 0; x <= col; x += 1) {
@@ -166,14 +168,18 @@ function show_gesture(value) {
                         welcheHand = hand[h].substr(0, 1);
                         bild = patterns[bildnummer - 1];
 
+
+
                         if (welcheHand == "R") {
                             push();
                             translate(x * cell_size + cell_size / 2, y * cell_size + cell_size / 2);
                             rotate(0);
                             image(bild, -cell_size / 2, -cell_size / 2, cell_size, cell_size);
                             pop();
+
                             //blendMode(OVERLAY);
                             tint(255, 150); //deckkraft
+
                         } else {
                             push();
                             translate(x * cell_size + cell_size / 2, y * cell_size + cell_size / 2);
@@ -186,7 +192,10 @@ function show_gesture(value) {
                     }
 
 
-                    //fill(100, 100, 255, 70)
+
+                    // image(bild, x * cell_size + cell_size / 2, y * cell_size + cell_size / 2, cell_size, cell_size);
+
+                    //fill(255, 100, 255, 70)
                     //square(x * cell_size, y * cell_size, cell_size)
                 }
             }
