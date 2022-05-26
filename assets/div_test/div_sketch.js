@@ -185,8 +185,8 @@ function show_gesture(value) {
                                 image(bild, -cell_size / 2, -cell_size / 2, cell_size, cell_size);
                                 pop();
 
-                                //blendMode(OVERLAY);
-                                tint(255, 50); //deckkraft
+                                // blendMode(OVERLAY);
+                                tint(255, 20); //deckkraft
 
                             } else {
                                 push();
