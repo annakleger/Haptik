@@ -131,8 +131,8 @@ function draw() {
 function grid(value) {
     // background(50, 50, 50);
 
-    stroke(0, 0, 255);
-    //noStroke();
+    // stroke(0, 0, 255);
+    noStroke();
 
     // console.log(face_positions)
     for (let x = 0; x <= col; x += 1) {
@@ -186,7 +186,7 @@ function show_gesture(value) {
                                 pop();
 
                                 //blendMode(OVERLAY);
-                                tint(255, 150); //deckkraft
+                                tint(255, 50); //deckkraft
 
                             } else {
                                 push();
