@@ -1,3 +1,3 @@
 # Haptik
 
-https://anfassen-erfassen.netlify.app
+https://haptik-test.netlify.app
