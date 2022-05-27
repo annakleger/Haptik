@@ -186,7 +186,7 @@ function show_gesture(value) {
                                 pop();
 
                                 // blendMode(OVERLAY);
-                                tint(255, 50); //deckkraft
+                                tint(255, 80); //deckkraft
 
                             } else {
                                 push();
