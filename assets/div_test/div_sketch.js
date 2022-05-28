@@ -62,6 +62,10 @@ function preload() {
     patterns[43] = loadImage('../img/patterns-44.png');
 }
 
+
+
+
+
 //Alles was nur einmal, beim ersten Laden der Seite ausgeführt werden soll
 function setup() {
     //Canvas erstellen und einmitten abhängig von der window-Grösse; müsste noch automatischen Refresh bei canvasResized programmieren
@@ -137,7 +141,9 @@ function grid(value) {
     // console.log(face_positions)
     for (let x = 0; x <= col; x += 1) {
         for (let y = 0; y <= row; y += 1) {
-            fill('#060C3C');
+            // fill('#060C3C');
+            // fill('#000000');
+            fill('#000220');
 
             square(x * cell_size, y * cell_size, cell_size)
 
@@ -186,7 +192,12 @@ function show_gesture(value) {
                                 pop();
 
                                 // blendMode(OVERLAY);
-                                tint(255, 80); //deckkraft
+                                tint(255, 250); //deckkraft
+
+                                //filter(BLUR, 3);
+
+
+
 
                             } else {
                                 push();
@@ -194,6 +205,10 @@ function show_gesture(value) {
                                 rotate(90);
                                 image(bild, -cell_size / 2, -cell_size / 2, cell_size, cell_size);
                                 pop();
+
+
+
+                                tint(255, 250); //deckkraft
                             }
                         }
 
